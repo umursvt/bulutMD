@@ -2,6 +2,7 @@ import React from 'react';
 import facebook from '../../img/facebook.png';
 import twitter from '../../img/twitter.png';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className="bg-dark text-white py-3">
@@ -17,8 +18,12 @@ function Footer() {
       <Container>
         <div className="">
           <div className=" mt-3 ">
-            <img src={facebook} alt="" />
-            <img src={twitter} alt="" className=" ms-lg-4 ms-md-3   " />
+            <Link to="/">
+              <img src={facebook} alt="" />
+            </Link>
+            <Link to="https://twitter.com/u_savut377 ">
+              <img src={twitter} alt="" className=" ms-lg-4 ms-md-3   " />
+            </Link>
           </div>
         </div>
         <div></div>

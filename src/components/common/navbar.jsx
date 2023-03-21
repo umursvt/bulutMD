@@ -12,7 +12,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="navbar-nav ml-auto me-lg-4 me-md-2 me-sm-2  ">
-          <Link className=" text-decoration-none ">
+          <Link to="/" className=" text-decoration-none ">
             <h2 className=" text-white  fw-light   me-lg-3">Giriş</h2>
           </Link>
 
@@ -20,7 +20,9 @@ function Navbar() {
             className="nav-link bg-danger text-white fw-bold px-4  "
             type="button"
           >
-            Deneme Başlat
+            <Link to="/" className=" text-decoration-none text-white  ">
+              Deneme Başlat
+            </Link>
           </button>
         </div>
       </nav>

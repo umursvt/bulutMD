@@ -18,8 +18,9 @@ function SearchAndFilter({ placeholder }) {
     const inputText = event.target.value;
     setText(inputText);
 
-    if (!inputText) {
-      // If there is no input shows the first 18 movies on the page
+    if (inputText === '') {
+      // this part should work fine but somehow after cleaning search box
+      // this code shows only 18 movies on the page
       setFilteredMovie(dataJson.entries.slice(0, 18));
     } else {
       //if user search any input
